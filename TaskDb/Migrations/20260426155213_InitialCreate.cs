@@ -23,7 +23,8 @@ namespace TaskD.Migrations
                     CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Title = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "TEXT", maxLength: 1000, nullable: false),
-                    Priority = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false)
+                    Priority = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false),
+                    DueDate = table.Column<DateTime>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -32,12 +33,12 @@ namespace TaskD.Migrations
 
             migrationBuilder.InsertData(
                 table: "Tasks",
-                columns: new[] { "Id", "CreatedAt", "Description", "IsCompleted", "Priority", "Title" },
+                columns: new[] { "Id", "CreatedAt", "Description", "DueDate", "IsCompleted", "Priority", "Title" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Контроллеры, маршруты, middleware", true, "High", "Изучить ASP.NET Core" },
-                    { 2, new DateTime(2026, 1, 2, 0, 0, 0, 0, DateTimeKind.Utc), "Миграции, DbContext, LINQ-запросы", false, "High", "Подключить SQLite через EF Core" },
-                    { 3, new DateTime(2026, 1, 3, 0, 0, 0, 0, DateTimeKind.Utc), "Описать ст руктуру проекта", false, "Normal", "Написть README" }
+                    { 1, new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Контроллеры, маршруты, middleware", null, true, "High", "Изучить ASP.NET Core" },
+                    { 2, new DateTime(2026, 1, 2, 0, 0, 0, 0, DateTimeKind.Utc), "Миграции, DbContext, LINQ-запросы", null, false, "High", "Подключить SQLite через EF Core" },
+                    { 3, new DateTime(2026, 1, 3, 0, 0, 0, 0, DateTimeKind.Utc), "Описать ст руктуру проекта", null, false, "Normal", "Написть README" }
                 });
         }
 

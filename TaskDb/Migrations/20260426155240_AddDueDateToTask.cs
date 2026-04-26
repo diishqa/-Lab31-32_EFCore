@@ -5,7 +5,7 @@
 namespace TaskD.Migrations
 {
     /// <inheritdoc />
-    public partial class НазваниеМиграции : Migration
+    public partial class AddDueDateToTask : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

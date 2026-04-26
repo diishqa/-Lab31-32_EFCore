@@ -11,8 +11,8 @@ using TaskDb.Data;
 namespace TaskD.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260426152833_AddDueDateToTask")]
-    partial class AddDueDateToTask
+    [Migration("20260426155213_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
