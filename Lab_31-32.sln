@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskDb", "TaskDb", "{092837B2-0D22-6E8C-7659-77474575C8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskD", "TaskDb\TaskD.csproj", "{1C67CAFE-5CF5-4895-467D-DB35F4EEF589}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C67CAFE-5CF5-4895-467D-DB35F4EEF589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C67CAFE-5CF5-4895-467D-DB35F4EEF589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C67CAFE-5CF5-4895-467D-DB35F4EEF589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C67CAFE-5CF5-4895-467D-DB35F4EEF589}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C67CAFE-5CF5-4895-467D-DB35F4EEF589} = {092837B2-0D22-6E8C-7659-77474575C8B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C04F849-0861-4880-B112-099FD9E8B00E}
+	EndGlobalSection
+EndGlobal
